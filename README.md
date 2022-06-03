@@ -1,24 +1,31 @@
-# `#f03c15`JS CS 2022
-- ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+) `#f03c15`
+# JS CS 2022 :pushpin:
 
-![My JavaScript cheatsheet](https://user-images.githubusercontent.com/60839579/171883605-148c6186-a6c9-4862-ba37-8f9a0eac9c9b.png)
+## [Array Methods](#array-methods---map--filter--reduce--find):pushpin:
 
-> **Note:** avaScript language update (ES2015, often called ES6). New features added by this update [here](http://es6-features.org); 
+
+
+
+
+```diff
+-RED
++ Green green
+! text in orange
+# text in gray
+@@ text in purple (and bold)@@
+```
 
 
 ## Table of Contents :+1:
 
-- [JS_CS_2022](#JS-CS-2022)
-  * [Table of contents](#table-of-contents)
-    + :shopping_cart: Array
-    + [Array methods - map / filter / reduce](#array-methods---map--filter--reduce--find)
-      - [Sample code](#sample-code-2)
-      - [Explanation](#explanation)
-        * [Array.prototype.map()](#arrayprototypemap)
-        * [Array.prototype.filter()](#arrayprototypefilter)
-        * [Array.prototype.reduce()](#arrayprototypereduce)
-        * [Array.prototype.find()](#arrayprototypefind)
-      - [External Resource](#external-resource-2)
+   + :shopping_cart: Array
+   + [Array methods - map / filter / reduce](#array-methods---map--filter--reduce--find)
+     - [Sample code](#sample-code-2)
+     - [Explanation](#explanation)
+       * [Array.prototype.map()](#arrayprototypemap)
+       * [Array.prototype.filter()](#arrayprototypefilter)
+       * [Array.prototype.reduce()](#arrayprototypereduce)
+       * [Array.prototype.find()](#arrayprototypefind)
+     - [External Resource](#external-resource-2)
 
 
 ### Array methods - map / filter / reduce / find
