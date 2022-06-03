@@ -1,4 +1,4 @@
-# JS_CS_2022
+# JS CS 2022
 
 ![My JavaScript cheatsheet](https://user-images.githubusercontent.com/60839579/171883605-148c6186-a6c9-4862-ba37-8f9a0eac9c9b.png)
 
@@ -7,7 +7,7 @@
 
 ## Table of Contents
 
-- [JS_CS_2022](#JS_CS_2022)
+- [JS_CS_2022](#JS-CS-2022)
   * [Introduction](#introduction)
     + [Motivation](#motivation)
     + [Complementary resources](#complementary-resources)
