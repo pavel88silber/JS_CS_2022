@@ -1,10 +1,11 @@
 # JS CS 2022 :office:
 
-## [Array](#array-methods):pushpin:
+## [Context [this arrow f()]](#this-arrow-f):desert_island:	
+## [Array [map filter reduce find]](#map-filter-reduce-find):pushpin:
 
 ---
-
-### Array Methods
+### :pushpin:
+### [map filter reduce find]
 - **Array.prototype.map()** takes an array, does something on its elements and returns an array with the transformed elements.
 - **Array.prototype.filter()** takes an array, decides element by element if it should keep it or not and returns an array with the kept elements only
 - **Array.prototype.reduce()** takes an array and aggregates the elements into a single value (which is returned)
@@ -33,8 +34,27 @@ const aboveTenSum = students
 
 console.log(aboveTenSum) // 44 -- 10 (Nick) + 15 (John) + 19 (Julia), Nathalie below 10 is ignored
 ```
+---
+### :desert_island:	
+### [this arrow f]
+```js
+// Контекст = область видимости + переменная this
+// this = ссылка на объект, которая вызывает код в данный момент
+```
+```diff
+-В стрелочной функции нет своего контеста (указывает на window)
+```
+```js
+function f1(n) {
+    this.textContent = n
+    console.log(this)
+}
 
+document.querySelector('#btn-1').addEventListener("click", () => {
+    f1.call(document.querySelector('#btn-2'), 'Harry') // bind context to (btn-2) + pass argument
+})
 
+```
 
 
 
