@@ -8,12 +8,7 @@
 ## Table of Contents
 
 - [JS_CS_2022](#JS-CS-2022)
-  * [Introduction](#introduction)
-    + [Motivation](#motivation)
-    + [Complementary resources](#complementary-resources)
   * [Table of contents](#table-of-contents)
-  * [Notions](#notions)
-
     + [Array methods - map / filter / reduce](#array-methods---map--filter--reduce--find)
       - [Sample code](#sample-code-2)
       - [Explanation](#explanation)
