@@ -1,7 +1,9 @@
 # JS CS 2022 :office:
 
-## [Context [this arrow f()]](#this-arrow-f):desert_island:	
+## [Context [this arrow f() Call Apply]](#this-arrow-f-call-apply):desert_island:	
+## [Context [bind]](#bind):cloud_with_lightning:	
 ## [Array [map filter reduce find]](#map-filter-reduce-find):pushpin:
+## [Callback](#callback):hourglass_flowing_sand:
 
 ---
 ### :pushpin:
@@ -36,7 +38,7 @@ console.log(aboveTenSum) // 44 -- 10 (Nick) + 15 (John) + 19 (Julia), Nathalie b
 ```
 ---
 ### :desert_island:	
-### [this arrow f]
+### [this arrow f Call Apply]
 ```js
 // Контекст = область видимости + переменная this
 // this = ссылка на объект, которая вызывает код в данный момент
@@ -53,9 +55,35 @@ function f1(n) {
 document.querySelector('#btn-1').addEventListener("click", () => {
     f1.call(document.querySelector('#btn-2'), 'Harry') // bind context to (btn-2) + pass argument
 })
-
+```
+```diff
+! apply так же как и call но аргумент массив
+```
+### :cloud_with_lightning:
+### [Bind]
+```js
+//code
 ```
 
+---
+### :hourglass_flowing_sand:
+### [Callback]
+```js
+function f1a(arr, cbFunc, where) {
+    let newArr = arr.map(item => myPow(item))
+    cbFunc(where, newArr)
+}
+
+const out3 = document.querySelector('.o3')
+
+const myPow = num => Math.pow(num, 3)
+
+function drawThis(block, elem) {
+    block.textContent += elem
+}
+
+f1a([1, 2, 3, 4, 5], drawThis, out3)
+```
 
 
 
