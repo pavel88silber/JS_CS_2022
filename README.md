@@ -5,10 +5,50 @@
 |[bind](#bind):cloud_with_lightning:| [Array [map filter reduce find]](#map-filter-reduce-find):pushpin:  | [Callback](#callback):hourglass_flowing_sand: |
 | [this arrow f() Call Apply](#this-arrow-f-call-apply):desert_island:	  | Content Cell  | coooooooo |
 
-| HEADER  | HEADER | HEADER |
+| Request / AJAX  | Promise | Local Storage |
 | ------------- | ------------- | ------------- |
-|[Fetch](#fetch):stethoscope:| [Promise + Promise.all](#promise-all):rainbow_flag: | 456 |
-| [Bind](#bind):funeral_urn:	  | Content Cell  | coooooooo |
+|[Fetch](#fetch):stethoscope:| [Promise + Promise.all](#promise-all):rainbow_flag: | [Example](#local-storage):safety_pin: |
+| [XMLHttpRequest](#xmlhttprequest):basket: | Content Cell  | coooooooo |
+
+---
+
+### :safety_pin:
+### [Local Storage]
+```js
+const out6 = document.querySelector('.out-6');
+const b6 = document.querySelector('#b-6');
+const a6 = {
+    'hello': 6,
+    'hi': 'mahai'
+};
+
+const t1 = () => {
+    localStorage.setItem("a6_key", JSON.stringify(a6));
+
+    console.log('JSON.stringify: ==> ' + a6);
+
+
+    const ls6 = localStorage.getItem("a6_key");
+
+    let newLs6 = JSON.parse(ls6);
+
+    console.log('JSON.stringify: ' + newLs6);
+    console.log(typeof newLs6); // object
+
+    for (let k in newLs6) {
+        out6.innerHTML += `${k} <br>`;
+        console.log(k);
+
+    }
+
+}
+
+b6.onclick = () => t1();
+localStorage.clear();
+```
+
+
+
 
 ---
 ### :pushpin:
@@ -42,6 +82,28 @@ const aboveTenSum = students
 console.log(aboveTenSum) // 44 -- 10 (Nick) + 15 (John) + 19 (Julia), Nathalie below 10 is ignored
 ```
 ---
+
+### :basket:
+### [XMLHttpRequest]
+```js
+let xhttp = new XMLHttpRequest()
+
+xhttp.onreadystatechange = function () {
+    if (this.readyState == 4 && this.status == 200) {
+        myFunction(this.responseText)
+    }
+}
+
+xhttp.open("GET", "http://localhost:8001?num1=888&num2=88", true)
+xhttp.send()
+
+function myFunction(data) {
+    console.log(data);
+}
+
+```
+
+---
 ### :desert_island:	
 ### [this arrow f Call Apply]
 ```js
@@ -64,6 +126,7 @@ document.querySelector('#btn-1').addEventListener("click", () => {
 ```diff
 ! apply так же как и call но аргумент массив
 ```
+---
 ### :funeral_urn:
 ### [Bind]
 ```js
