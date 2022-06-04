@@ -7,13 +7,8 @@
 
 | HEADER  | HEADER | HEADER |
 | ------------- | ------------- | ------------- |
-|[fetch](#fetch):stethoscope:| [Promise + Promise.all](#promise-all):rainbow_flag: | 456 |
-| 123	  | Content Cell  | coooooooo |
-
-## [Context [this arrow f() Call Apply]](#this-arrow-f-call-apply):desert_island:	
-## [Context [bind]](#bind):cloud_with_lightning:	
-## [Array [map filter reduce find]](#map-filter-reduce-find):pushpin:
-## [Callback](#callback):hourglass_flowing_sand:
+|[Fetch](#fetch):stethoscope:| [Promise + Promise.all](#promise-all):rainbow_flag: | 456 |
+| [Bind](#bind):funeral_urn:	  | Content Cell  | coooooooo |
 
 ---
 ### :pushpin:
@@ -69,7 +64,7 @@ document.querySelector('#btn-1').addEventListener("click", () => {
 ```diff
 ! apply так же как и call но аргумент массив
 ```
-### :cloud_with_lightning:
+### :funeral_urn:
 ### [Bind]
 ```js
 //code
@@ -78,7 +73,18 @@ document.querySelector('#btn-1').addEventListener("click", () => {
 ### :stethoscope:
 ### [Fetch]
 ```js
-//code
+fetch('http://localhost:8001?num1=1&num2=88')
+    .then(response => response.json())
+    .then(console.log('Fetch Request '))
+    .then(iJson => console.log(iJson))
+
+    .then(data => {
+        console.log(data);
+        console.log(`Status => ${data.status}`);
+        console.log(`URL => ${data.url}`);
+        res = data
+        return console.log(res);
+    })
 ```
 ---
 ### :rainbow_flag:
@@ -139,7 +145,7 @@ f1a([1, 2, 3, 4, 5], drawThis, out3)
 
 
 
-
+---
 
 ```diff
 -RED
