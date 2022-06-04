@@ -1,4 +1,4 @@
-# JS CS 2022 :office:
+# JavsScript CheetSheet 2022 :office:
 
 | Context  | Array | Function | OOP |
 | ------------- | ------------- | ------------- | ------------- |
