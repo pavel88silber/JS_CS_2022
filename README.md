@@ -1,5 +1,15 @@
 # JS CS 2022 :office:
 
+| Context  | Array | Function |
+| ------------- | ------------- | ------------- |
+|[bind](#bind):cloud_with_lightning:| [Array [map filter reduce find]](#map-filter-reduce-find):pushpin:  | [Callback](#callback):hourglass_flowing_sand: |
+| [this arrow f() Call Apply](#this-arrow-f-call-apply):desert_island:	  | Content Cell  | coooooooo |
+
+| HEADER  | HEADER | HEADER |
+| ------------- | ------------- | ------------- |
+|[fetch](#fetch):stethoscope:| [Promise + Promise.all](#promise-all):rainbow_flag: | 456 |
+| 123	  | Content Cell  | coooooooo |
+
 ## [Context [this arrow f() Call Apply]](#this-arrow-f-call-apply):desert_island:	
 ## [Context [bind]](#bind):cloud_with_lightning:	
 ## [Array [map filter reduce find]](#map-filter-reduce-find):pushpin:
@@ -64,8 +74,50 @@ document.querySelector('#btn-1').addEventListener("click", () => {
 ```js
 //code
 ```
+---
+### :stethoscope:
+### [Fetch]
+```js
+//code
+```
+---
+### :rainbow_flag:
+### [Promise All]
+```js
+let num1 = new Promise((resolve, rej) => {
+    fetch('http://localhost:8001?name=Kolya',
+        // method: "GET",
+        { mode: 'no-cors' },
+        { responseType: 'json' }
+    )
+        .then(data => {
+            resolve(data.text())
+            // console.log(data);
+        })
+})
+
+let num2 = new Promise((res, rej) => {
+    fetch('http://localhost:8001?name2=Tuzik', {
+        method: "GET",
+        mode: 'no-cors'
+    })
+        .then(data => {
+            console.log(data.text());
+            res(data.text())
+        })
+})
+
+let arr = [num1, num2]
+
+Promise.all(arr).then(value => {
+    console.log(value[1]);
+    console.log(value[0]);
+})
+```
 
 ---
+
+
 ### :hourglass_flowing_sand:
 ### [Callback]
 ```js
